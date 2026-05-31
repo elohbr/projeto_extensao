@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizzaria E</title>
+</head>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #01401f;
+      color: #fdfaf7;
+    }
+
+    /* Barra de navegação */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #012f17;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 1000;
+      box-sizing: border-box;
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    nav .logo img {
+      height: 45px;       /* Ajuste do tamanho da logo na barra */
+      width: auto;        /* Mantém a proporção */
+      margin-right: 10px; /* Espaço entre a imagem e eventual texto */
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Espaço para compensar nav fixa */
+    .spacer {
+      height: 70px;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 10px 10px;
+      background: #012f17;
+      box-sizing: border-box;
+      width: 98%; 
+      margin: 10px auto;  
+      border-radius: 10px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1{
+      text-align: center;
+      font-size: 60px;
+      color: #C62828;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 45px;
+      color: white;
+    }
+
+    h3 {
+      font-size: 45px;
+      color: #C62828;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 30px;
+      color: white;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 25px;
+      color: white;
+    }
+
+    li {
+      font-size: 18px; 
+    }
+
+    footer {
+      text-align: center;
+      background-color: #012f17;
+      padding: 20px;
+      color: white;
+      margin-top: 40px;
+    }
+
+</style>
+
+<body>
+  
+  <!-- Barra de navegação -->
+  <nav>
+  <div class="logo">
+    <img src="logo.png" alt="Pizzaria E">
+  </div>
+    <ul>
+      <li><a href="#quemsomos">Quem somos</a></li>
+      <li><a href="index.html">Cadastro de Motoboy</a></li>
+      <li><a href="index.html">Ganhos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <br><br><br><br><br><br>
+  <h1> PIZZARIA E </h1>
+  <br>
+  <h2 align="center">Tudo acaba em pizza 🍕</h2>
+  <br><br><br>
+  <center><img src="logo.png" alt="Orochi" width="300"></center>
+  <br><br><br>
+
+  <!-- Hero -->
+  <section id="quemsomos" class="hero">
+    <h3>Quem somos </h3>
+    <h4>A Pizzaria E foi criada para oferecer pizzas saborosas, atendimento de qualidade e momentos especiais para nossos clientes.
+    Trabalhamos com ingredientes selecionados e muito carinho em cada pedido, até porque aqui...<br>
+    Tudo acaba em pizza :) 🍕</h4>
+  </section>
+
+  <h3> Outras Plataformas </h3>
+  <p><a href="index.html">Cadastro de Motoboy</a></p>
+  <p><a href="projeto1.html">Ganhos</a></p>
+    
+     <!-- Contato -->
+    <section id="contato" class="hero">  
+      <h3> Fale conosco </h3>
+     <p>Email: <a href="mailto:pizzaria.e.ofc@gmail.com"> 
+      pizzaria.e.ofc@gmail.com  </a> | WhatsApp: (11) 99999-9999</p>
+    </section>
+
+  </div>
+</section>
+
+  <footer>
+    &copy; 2026 Pizzaria E | Tudo acaba em pizza 🍕 </footer>
+  
+</body>
+</html>
