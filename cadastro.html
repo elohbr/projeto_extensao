@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head>s
   <meta charset="UTF-8">
   <title>Ficha de Cadastro para Motoboy</title>
 
@@ -13,18 +13,25 @@
 </head>
 <style>
     .container {
-      max-width: 600px;
+      max-width: 420px;
       margin: 40px auto;
       padding: 20px;
-      background-color: #1c1c1c;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #000;
+      background-color: #00401A;
+      border-radius: 0px;
+      box-shadow: 0 0 10px #00401A;
+      border-color: #C62828;
     }
 
     h1 {
-      text-align: center;
-      color: #C62828;
-      margin-bottom: 25px;
+      color: black;
+      margin-bottom: 10px;
+      background-image: url(cadastro.png);
+      text-indent: -9999px;
+      background-position: center;
+      width: 70%;
+      height: 80px;
+      display: flex;
+      justify-content: center;
     }
 
     label {
@@ -72,9 +79,7 @@
 
     input[type="submit"]:hover,
     input[type="reset"]:hover,
-    input[type="button"]:hover {
-      /* background-color: #C62828; */
-    }
+    input[type="button"]:hover,
 
     input[type="image"]
     {
@@ -97,17 +102,17 @@
 
 </style>
 
-    <body style="background-image: url('logo.png'); color: #ccc;">    
+    <body style="background-image: url('imagem_fundo.jpeg'); color: #ccc; background-attachment: fixed;background-size: cover;">
 <div class="container">
 
-    <a href="page_inicial.html" style="color: #C62828; font-weight: bold; display: inline-block; margin-bottom: 20px;">
+    <a href="index.html" style="color: white; font-weight: bold; display: inline-block; margin-bottom: 30px; text-align: center;">
       🏠 Voltar para a Página Inicial
     </a>
 
-    <form id="formMotoboy">
+    <form id="formMotoboy" style="max-width: 390px; width: 100%; margin: 0 auto; background-color: #00401A; padding: 15px;">
 
-    <h1>Cadastre o novo Motoboy</h1>
-      <div class="campos">
+    <h1 style="url(fonte.jpeg); justify-content: center; align-items: center;">.</h1>
+      <div class="image">
       <label for= "txt_name"> Nome Completo: </label>
       <input type="text" name="txt_name"  maxlength="30" required>
 
@@ -131,7 +136,7 @@
       <br>
     </div>
 
-    <div style="display: flex; justify-content: space-between;">
+    <div style="display: flex;justify-content: space-between;">
     <input type="submit"value="Salvar" style="background-color: green">
     <input type="reset" value="Cancelar">
 
@@ -182,7 +187,7 @@
     </script>
 
     <script>
-document.getElementById("formMotoboy").addEventListener("submit", function(event) {
+    document.getElementById("formMotoboy").addEventListener("submit", function(event) {
     event.preventDefault();
 
     let email = document.querySelector('input[name="txt_email"]').value;
